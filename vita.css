@@ -182,6 +182,7 @@ h6 {
     border: 1px solid #ffbe5d;
     border-radius: 10px;
 }
+
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     font-weight: 800 !important;
 }
@@ -751,16 +752,6 @@ h1 span {
     position: relative;
     width: 100%;
 }
-
-/* .Category-images:hover .sub-Category-image {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-} */
-
-/* .Category-images:hover .sub-Category-text {
-    opacity: 1;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.83) 100%);
-} */
-
 .sub-Category-text {
     padding-left: 1rem;
     width: 89%;
@@ -1081,7 +1072,114 @@ h1 span {
 /* End of footer */
 
 
+/* about us page */
+.nav-container {
+    margin-bottom: 100px !important;
+}
 
+.aboutus-sec-heading {
+    gap: 32px;
+}
+
+.sub-container {
+    gap: 0px;
+}
+
+/* second section */
+.value-image-div {
+    display: flex;
+    width: 100%;
+    column-gap: 24px;
+}
+.bottom-value-images {
+    margin-top: 24.5px;
+}
+.about-us-second-section-text {
+    padding-left: 80px;
+}
+.value-h5-number {
+    font-weight: 700 !important;
+    color: #130F26 !important;
+    margin-bottom: 0% !important;
+    text-align: start;
+}
+.value-h5-number span{
+    margin-right: 8px;
+    font-weight: 800 !important;
+    color: #130F26 !important;
+}
+.value-paragraph {
+    font-family: 'Nunito',sans-serif;
+    padding-left: 38px;
+    margin: 12px 0px 0px 0px !important;
+    font-weight: 400 !important;
+    color: #474747 !important;
+    text-align: start;
+}
+/*end of second section */
+
+/* third section */
+.section-3-text {
+    flex-direction: column;
+}
+.section-3-text h4 {
+    font-weight: 800 !important;
+    color: #130F26 !important;
+    letter-spacing: normal !important;
+}
+.section-3-text span {
+    font-weight: 800 !important;
+    color: #130F26 !important;
+    letter-spacing: normal !important;
+    margin-right: 8px;
+}
+/* end of third section */
+
+
+/* fourth section - award section */
+.award-sec-heading {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 24px;
+    line-height: 70px;
+    text-align: center;
+    justify-content: center;
+}
+.award-sec-heading span {
+    color: #ffbe5d;
+}
+.collections-images:hover .award-text {
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    /* height: 50%; */
+}
+.award-text {
+    width: 88%;
+    border-radius: 10px;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 81.8%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: start;
+    padding: 16px 16px;
+}
+
+.award-text h4 {
+    font-weight: 700;
+    text-align: start;
+    letter-spacing: normal !important;
+}
+.award-text h6 {
+    font-weight: 400;
+}
+/* end of fourth section - award section */
+/* End of about us page */
 
 
 
@@ -1116,6 +1214,13 @@ h1 span {
         top: 92.2%;
         left: 50%;
     }
+
+    /* aboutus page */
+    .award-text {
+        width: 88%;
+        top: 81.8%;
+    }
+    /* end of aboutus page */
 }
 
 /* end of max-width:1440px */
@@ -1123,9 +1228,13 @@ h1 span {
 
 /* min-width:769px */
 @media (min-width:769px) {
+    .nav-container {
+        padding-top: 40px !important;
+    }
     .navbar-nav {
         gap: 32px;
     }
+
     .nav-link.active:hover::after {
         width: 5px;
         height: 6px;
@@ -1133,7 +1242,8 @@ h1 span {
         /* width: 10%; */
         /* transition: width .2s; */
     }
-    .nav-link.active::after{
+
+    .nav-link.active::after {
         content: '';
         display: block;
         width: 5px;
@@ -1168,6 +1278,22 @@ h1 span {
     /* .sub-Category-text h4 {
         margin-bottom: 16px !important;
     } */
+
+
+    /* about us page */
+    .aboutus-page-nav-container {
+        --bs-gutter-x: 0px !important;
+    }
+
+    .sub-section-image-align {
+        text-align: end;
+        /* padding-left: 5rem; */
+    }
+    .award-sec-heading {
+        width: 70%;
+        margin: 0px auto;
+    }
+    /* end of about us page */
 }
 
 /* End of min-width:769px */
@@ -1391,12 +1517,36 @@ h1 span {
         letter-spacing: 0.0185em !important;
     }
 
-
-    /* for hamburger  */
-
-    /* enf of hamburger */
+    /* about us page */
+    .sub-container {
+        gap: 2rem;
+    }
+    .sub-section-image-align img{
+        width: 100%;
+    }
+    .aboutus-sec-heading h5 {
+        margin-bottom: 0px !important;
+    }
+    .about-us-second-section-text {
+        padding-left: 0px;
+    }
+    .value-image {
+        width: 100%;
+    }
+    .legacy-image {
+        width: 100%;
+    }
+    .award-sec-heading {
+        gap: 20px;
+    }
+    .award-text {
+        opacity: 1;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        width: 90%;
+        top: 85%;
+    }
+    /* end of about us page */
 }
-
 /* End of max-width:768px */
 
 
@@ -1770,6 +1920,43 @@ h1 span {
     .search-button-for-mob {
         padding: 6px 12px 6px 12px !important;
     }
+
+    /* aboutus Page  */
+    .aboutus-sec-heading h5 {
+        margin-bottom: 0px !important;
+    }
+
+    .sub-container {
+        gap: 1.5rem;
+    }
+    .about-us-section-text, .aboutus-sec-heading  {
+        gap: 20px;
+    }
+    .aboutus-sec-heading h5 {
+        margin: 0px auto;
+    }
+    .value-image-div {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .value-image {
+        max-height: 245px;
+    }
+    .value-h5-number {
+        text-align: center;
+    }
+    .value-paragraph {
+        margin-top: 6px !important;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .award-text {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        opacity: 1;
+        width: 89%;
+        top: 86%;
+    }
+    /* End of aboutus Page  */
 }
 
 /* End of max-width:425px */
