@@ -7,11 +7,11 @@
 @font-face {
     font-family: "Airbnb Cereal";
     src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Bd.otf');
-    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Bk.otf');
-    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Blk.otf');
-    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Lt.otf');
-    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Md.otf');
     src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_XBd.otf');
+    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Md.otf');
+    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Lt.otf');
+    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Blk.otf');
+    src: url('./Fonts/airbnb-cereal-font/AirbnbCereal_W_Bk.otf');
 }
 
 
@@ -1181,6 +1181,47 @@ h1 span {
 /* end of fourth section - award section */
 /* End of about us page */
 
+/* contact-us page */
+.contact-form {
+    width: 70% !important;
+    margin: 74px auto 0px auto !important;
+    --bs-gutter-y: 2.5rem !important;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 24px;
+}
+.contact-form div {
+    margin-top: 40px !important;
+    /* padding: 0% !important; */
+}
+.contact-form div:nth-of-type(-N+2) {
+    margin-top: 0px !important;
+}
+.contact-form div:last-child {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form div:last-child button {
+    width: 100%;
+}
+.form-content label {
+    font-weight: 500 !important;
+    font-family: 'Airbnb Cereal', sans-serif !important;
+    color: #A5A5A5 !important;
+    font-style: normal !important;
+}
+.form-content input, select, textarea {
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-family: 'Airbnb Cereal', sans-serif !important;
+    color: #A5A5A5 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+
+/* End of contact-us page */
 
 
 
@@ -1547,6 +1588,36 @@ h1 span {
         top: 85%;
     }
     /* end of about us page */
+
+
+    /* contact us page */
+    .contact-form {
+        width: 100% !important;
+        padding: 24px;
+    }
+    .contact-form div {
+        margin-top: 40px !important;
+    }
+    /* .contact-form div:nth-of-type(-N+2) {
+        margin-top: 0px !important;
+    } */
+    .contact-form div:last-child {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-form div:last-child button {
+        width: 100%;
+    }
+    .form-content input, select, textarea {
+        font-size: 12px !important;
+        line-height: 16px !important;
+    }
+    .form-select {
+        width: 83% !important;
+    }
+    /* End of contact us page */
+
 }
 /* End of max-width:768px */
 
@@ -1959,13 +2030,41 @@ h1 span {
         top: 86%;
     }
     /* End of aboutus Page  */
+
+        /* contact us page */
+        .contact-form {
+            margin: 25px auto 0px auto !important;
+        }
+        .contact-form div {
+            margin-top: 20px !important;
+        }
+        .contact-form div:first-child {
+            margin-top: 0px !important;
+        }
+        .contact-form div:nth-of-type(2) {
+            margin-top: 20px !important;
+        }
+        .contact-form div:last-child {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact-form div:last-child button {
+            width: 100%;
+        }
+        .form-content {
+            padding: 0px !important;
+        }
+        .form-content label {
+            float: left;
+        }
+        .form-content input, select, textarea {
+            font-size: 11px !important;
+            line-height: 15px !important;
+        }
+        .form-select {
+            width: 100% !important;
+        }
+        /* End of contact us page */
 }
-
 /* End of max-width:425px */
-
-
-
-/* min-width:425px */
-@media (min-width:425px) {}
-
-/* End of min-width:425px */
