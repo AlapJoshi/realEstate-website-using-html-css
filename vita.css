@@ -1220,6 +1220,17 @@ h1 span {
     font-size: 14px !important;
     line-height: 18px !important;
 }
+.back-arrow-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.back-arrow-button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
 
 /* End of contact-us page */
 
@@ -1591,6 +1602,13 @@ h1 span {
 
 
     /* contact us page */
+    .back-button {
+        margin-right: 0%;
+    }
+    .back-arrow-button:hover {
+        cursor: pointer;
+        transform: none;
+    }
     .contact-form {
         width: 100% !important;
         padding: 24px;
